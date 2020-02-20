@@ -70,8 +70,14 @@
         });
     上例的element字段是css选择器字符串,故可以使用UI自动化测试添加属性进行定位,如: [data-uid='btn']
 ```
-
-## 五.相关链接
+## 五.UI自动化标识属性值生成建议
+```
+注: 此条只是建议,不进行强制约束,应当依据项目实际情况来自定义生成.
+生成规则推荐:  [页面id]&[元素功能英文描述]
+举例:  soam-cloud系统中风险监测界面中地图视图查询   ->    riskMonitoring&mapViewQuery
+最后界面上查询按钮元素上得到的属性为:    data-uid='riskMonitoring&mapViewQuery'
+```
+## 六.相关链接
 [新手帮助功能实现库之一:driver.js](https://github.com/kamranahmedse/driver.js/blob/master/readme.md 'driver.js')
 
 [data-*自定义属性](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes/data-* 'data-*自定义属性')
